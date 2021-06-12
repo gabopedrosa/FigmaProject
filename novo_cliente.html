@@ -8,8 +8,13 @@
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="supreme.css" />
 		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=4"></script>
-		<!-- Add your custom HEAD content here -->
-
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css'>
+		<script>
+					function Exit() {
+					var x=confirm('Are You sure want to exit:');
+					if(x) window.close();
+			}
+		  </script>
 	</head>
 	<body>
 		<div id="content-container" >
@@ -17,97 +22,104 @@
 				<div id="_bg__novo_cliente_ek2"  ></div>
 				<div id="rectangle_25_ek5"  ></div>
 				<div id="rectangle_35_ek5"  ></div>
-				<div id="sair_ek8" >
-					SAIR
-				</div>
 				<img src="skins/mask_group_ek9.png" id="mask_group_ek9" />
-				<div id="pedidos_ek8" >
-					PEDIDOS
+				
+				<!---	MENU QUE RETORNARÁ AS PÁGINAS		--->
+				<div id="novo_pedido_ek12" >
+					<a class="button" href="./novo_pedido.html"> NOVO PEDIDO </a>
 				</div>
 				<div id="clientes_ek8" >
-					CLIENTES
+					<a class="button" href="./clientes.html"> CLIENTES </a>
 				</div>
-				<div id="novo_pedido_ek12" >
-					<button> NOVO PEDIDO </button>
+				<div id="pedidos_ek8" >
+					<a class="button" href="./pedidos.html"> PEDIDOS </a>
 				</div>
 				<div id="entregas_ek13" >
-					ENTREGAS
+					<a class="button" href="./entregas.html"> ENTREGAS </a>
 				</div>
 				<div id="estoques_ek12" >
-					ESTOQUES
+					<a class="button" href="./estoques.html"> ESTOQUES </a>
 				</div>
 				<div id="relat_rios_ek10" >
-					RELATÓRIOS
+					<a class="button" href="./entrega.html">RELATÓRIOS </a>
 				</div>
+				<div id="sair_ek8" >
+					<a class="button" href="javascript:if(confirm('Deseja mesmo sair?'))window.close()"> SAIR </a>
+				</div>
+
+
+
+				<!---		Menu "Novo Cliente"	--->
 				<div id="rectangle_17_ek11"  ></div>
 				<div id="novo_cliente_ek3" >
 					Novo Cliente
 				</div>
+				<!---		Receber dados dos Clientes no Menu "Novo Cliente", aqui o usuário irá digitar seus dados.	--->
 				<div id="rectangle_17_ek12"  ></div>
 				<img src="skins/undo_ek3.png" id="undo_ek3" />
-				<div id="ajuda_ek9" >
-					Ajuda
+				<div id="rectangle_28"  ></div>
+				<div id="nome_" >
+					<input type="text" placeholder="Nome do Cliente"> </label>
+				</div>
+	
+				<div id="rectangle_34"  ></div>
+				<div id="pessoa_f_sica" >
+					<input type="checkbox">Pess. Física
+				</div>
+				<div id="pessoa_jur_dica" >
+					<input type="checkbox">Pess. Jurídica
 				</div>
 				<div id="rectangle_33_ek1"  ></div>
 				<div id="cpf_cnpj__ek2" >
-					CPF/CNPJ:
-				</div>
-				<div id="rectangle_28"  ></div>
-				<div id="nome_" >
-					Nome:
-				</div>
-				<div id="rectangle_34"  ></div>
-				<div id="pessoa_f_sica" >
-					Pessoa F<span class="char">%C3%ADs</span>sica
-				</div>
-				<div id="pessoa_jur_dica" >
-					Pessoa Jur<span class="char">%C3%ADd</span>dica
-				</div>
-				<div id="rectangle_14_ek2"  ></div>
-				<div id="cadastrar" >
-					Cadastrar
+					<input type="text" placeholder="CPF/CNPJ"> </label>
 				</div>
 				<div id="rectangle_25_ek6"  ></div>
 				<div id="rua_" >
-					Rua:
-				</div>
-				<div id="rectangle_25_ek7"  ></div>
-				<div id="email_" >
-					Email:
-				</div>
-				<div id="rectangle_25_ek8"  ></div>
-				<div id="bairro_" >
-					Bairro:
+					<input type="text" placeholder="Rua / Endereço"> </label>
 				</div>
 				<div id="rectangle_25_ek9"  ></div>
 				<div id="n__" >
-					N<span class="char">%C2%BA:</span>:
+					<input type="number" placeholder="Nº">
 				</div>
-				<div id="rectangle_25_ek10"  ></div>
-				<div id="uf_" >
-					UF:
+				<div id="rectangle_25_ek8"  ></div>
+				<div id="bairro_" >
+					<input type="text" placeholder="Bairro"> </label>
 				</div>
 				<div id="rectangle_25_ek11"  ></div>
 				<div id="complemento_" >
-					Complemento:
-				</div>
-				<div id="rectangle_25_ek12"  ></div>
-				<div id="telefone_" >
-					Telefone:
-				</div>
-				<div id="rectangle_25_ek13"  ></div>
-				<div id="celular_" >
-					Celular:
+					<input type="text" placeholder="Complemento"> </label>
 				</div>
 				<div id="rectangle_25_ek14"  ></div>
 				<div id="cep_" >
-					CEP:
+					<input type="text" placeholder="CEP"> </label>
 				</div>
 				<div id="rectangle_25_ek15"  ></div>
 				<div id="cidade" >
-					Cidade
+					<select>
+						<option> Cidade</option>
+						<option> Fortaleza</option>
+						<option> Tocantins</option>
+						<option> São Paulo</option>
+						<option> Rio de Janeiro</option>
 				</div>
-
+				<div id="uf_" >
+					<input type="text" placeholder="UF"> </label>
+				</div>
+				<div id="rectangle_25_ek12"  ></div>
+				<div id="telefone_" >
+					<input type="number" placeholder="Telefone">
+				</div>
+				<div id="rectangle_25_ek13"  ></div>
+				<div id="celular_" >
+					<input type="number" placeholder="Celular">
+				</div>
+				<div id="rectangle_25_ek7"  ></div>
+				<div id="email_" >
+					<input type="email" placeholder="E-mai">
+				</div>
+				<div id="cadastrar" >
+					<button class="button-primary"> CADASTRAR </button>
+				</div>
 			</div>
 
 			<img src="skins/expand_arrow_ek2.png" id="expand_arrow_ek2" />
